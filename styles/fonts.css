@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'alibaba';
+  font-style: normal;
+  /* font-weight:900; */
+  src: local('alibaba-bold'), url(../public/fonts/alibaba-bold.woff-4edf9c7b.woff) format('woff', "truetype");
+}
+@font-face {
+  font-family: 'alibaba';
+  font-style: normal;
+  src: local('alibaba-regular'), url(../public/fonts/alibaba-regular.woff) format('woff');
+}
+@font-face {
+  font-family: 'alibaba';
+  font-style: normal;
+  /* font-weight: 900;a */
+  src: local('alibaba-light'), url(../public/fonts/alibaba-light.woff-0d922222.woff) format('woff', "truetype");
+}
