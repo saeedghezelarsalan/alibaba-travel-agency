@@ -1,5 +1,6 @@
 import "../../styles/globals.css";
 import Head from "next/head";
+import Navbar from "../provider/Navbar";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -15,8 +16,9 @@ function MyApp({ Component, pageProps }) {
           href="https://cdn.alibaba.ir/h2/desktop/assets/images/logo-alibaba-square-logo-small-1fb61159.svg"
         />
       </Head>
-      
+      <Navbar>
         <Component {...pageProps} />
+      </Navbar>
     </div>
   );
 }
