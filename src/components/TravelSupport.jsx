@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { useTranslation } from "next-i18next";
-import { useLanguage } from "./Navbar";
+import { useLanguage } from "../provider/Navbar";
 
 export const TravelSupport = () => {
   // Language

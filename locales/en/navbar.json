@@ -1,0 +1,20 @@
+{
+  "flight": "flight",
+  "domesticFlight": "Domestic",
+  "internationalFlight": "International",
+  "bus": "Bus",
+  "train": "Train",
+  "tour": "Tour",
+  "more": "More",
+  "stay": "Stay",
+  "hotel": "Hotel",
+  "village": "Village",
+  "alibabaMag": "Alibaba Magazine",
+  "plusAlibaba": "Plus Alibaba",
+  "trackOrder": "Track Order",
+  "loginOrRegister": "Login or register",
+  "new": "new",
+  "camps": "village",
+  "search" : "search",
+  "back" : "back"
+}

@@ -1,0 +1,20 @@
+{
+  "flight": "پرواز",
+  "domesticFlight": "پرواز داخلی",
+  "internationalFlight": "پرواز خارجی",
+  "bus": "اتوبوس",
+  "train": "قطار",
+  "tour": "تور",
+  "more": "بیشتر",
+  "stay": "اقامت",
+  "hotel": "هتل",
+  "village": "ویلا و اقامتگاه",
+  "alibabaMag": "مجله علی بابا",
+  "plusAlibaba": "پلاس علی بابا",
+  "trackOrder": "پیگیری خرید",
+  "loginOrRegister": "ورود یا ثبت نام",
+  "new": "جدید",
+  "camps": "اقامتگاه",
+  "search" : "جستجو",
+  "back" : "بازگشت"
+}
