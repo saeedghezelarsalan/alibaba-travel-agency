@@ -4,6 +4,8 @@ import Navbar from "../provider/Navbar";
 import { appWithTranslation } from "next-i18next";
 import BorderProvider from "../Provider/BorderProvider";
 import Footer from "../components/Footer";
+import DarkMode from "../components/DarkMode";
+import { ThemeProvider } from "next-themes";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -19,12 +21,15 @@ function MyApp({ Component, pageProps }) {
           href="https://cdn.alibaba.ir/h2/desktop/assets/images/logo-alibaba-square-logo-small-1fb61159.svg"
         />
       </Head>
+      <ThemeProvider attribute="class">
       <Navbar>
         <BorderProvider>
           <Component {...pageProps} />
         </BorderProvider>
       </Navbar>
       <Footer />
+      <DarkMode />
+      </ThemeProvider>
     </div>
   );
 }
