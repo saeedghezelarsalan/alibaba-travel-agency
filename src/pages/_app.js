@@ -3,6 +3,7 @@ import Head from "next/head";
 import Navbar from "../provider/Navbar";
 import { appWithTranslation } from "next-i18next";
 import BorderProvider from "../Provider/BorderProvider";
+import Footer from "../components/Footer";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -23,6 +24,7 @@ function MyApp({ Component, pageProps }) {
           <Component {...pageProps} />
         </BorderProvider>
       </Navbar>
+      <Footer />
     </div>
   );
 }
