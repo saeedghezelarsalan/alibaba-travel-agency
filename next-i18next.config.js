@@ -3,5 +3,6 @@ module.exports = {
     defaultLocale: "fa",
     locales: ["fa", "en"],
     localePath: "./locales",
+    localeDetection: false
   },
 };

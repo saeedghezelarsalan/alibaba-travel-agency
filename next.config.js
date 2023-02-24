@@ -1,7 +1,5 @@
 /** @type {import('next').NextConfig} */
-// next.config.js
-// const { i18n } = require("./next-i18next.config");
-
+const { i18n } = require("./next-i18next.config");
 
 
 module.exports = {
@@ -16,10 +14,5 @@ module.exports = {
   images: {
     domains: ["cdn.alibaba.ir"],
   },
-  i18n: {
-    defaultLocale: "fa",
-    locales: ["fa", "en"],
-    localePath: "./locales",
-    localeDetection: false
-  },
+  i18n
 }
