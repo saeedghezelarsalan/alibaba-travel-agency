@@ -1,6 +1,5 @@
-import React, { useState, useRef, useReducer } from "react";
-import OriginAndDestinationInput from "./OriginAndDestinationInput";
-import TwoWayDatePicker from "./TwoWayDatePicker";
+import React, { useState } from "react";
+import DatePicker from "../../DatePicker";
 import Link from "next/link";
 import RoundTripSelection from "../../RoundTripSelection";
 import MobileOriginAndDestination from "../../SmallOriginAndDestination";
@@ -32,7 +31,7 @@ const BusTravel = ({ iranState }) => {
       <MobileOriginAndDestination iranState={iranState} />
       {/* Date Range */}
       
-      <TwoWayDatePicker oneWay={oneWay} />
+      <DatePicker oneWay={oneWay} />
       <button className="text-center w-full h-full text-black bg-[#FDB713] py-4 rounded-lg">
       {lang == "fa" ? "جستجو" : "Search"}
       </button>

@@ -46,7 +46,7 @@ const RoundTripSelection = ({isOneWay}) => {
             </Menu.Button>
             <Menu.Items
               className={
-                "absolute flex flex-col items-center  h-auto  bg-white dark:bg-[#312c2c] dark:border-black shadow-lg top-[2.5rem] border border-vehiclsContainer rounded-md p-1.5 !z-[999] w-max px-4"
+                "absolute flex flex-col items-center  h-auto  bg-white dark:bg-[#312c2c] dark:border-black shadow-lg top-[2.5rem] border border-vehiclsContainer rounded-md p-1.5 !z-[999] w-max px-4 gap-y-2"
               }
             >
               <Menu.Item>

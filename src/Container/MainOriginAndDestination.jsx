@@ -255,7 +255,7 @@ const MainOriginAndDestination = ({
       (lang == "en" && englishStartInputRef.current.contains(e.target))
     ) {
       // inside click
-      return;
+      return true;
     }
 
     dispatch({ type: "clickOutsides" });
@@ -512,7 +512,9 @@ const MainOriginAndDestination = ({
             <div>
               {state.busyItems ? (
                 <div>
-                  <p className="py-2 px-4 dark:text-white">پر تردد اول</p>
+                  <p className="py-2 px-4 dark:text-white">
+                  {lang == 'fa' ? 'پرتردد' : 'Busy'}
+                  </p>
                   <div>
                     {iranStates
                       .filter((city) => city.busy == true)

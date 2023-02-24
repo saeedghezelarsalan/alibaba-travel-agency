@@ -1,8 +1,16 @@
 import React, { useReducer, useState } from "react";
-import { useLanguage } from "../Navbar";
 import MainOriginAndDestination from "../Container/MainOriginAndDestination";
+import { useLanguage } from "../provider/Navbar";
 
 const SmallOriginAndDestination = ({ iranState }) => {
+
+  const initialState = {
+    origin: "",
+    destination: "",
+    swip: true,
+  };
+
+  
   const reducer = (state, action) => {
     switch (action.type) {
       case "originValue": {

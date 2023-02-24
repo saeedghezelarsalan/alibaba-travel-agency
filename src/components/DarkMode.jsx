@@ -11,7 +11,7 @@ const DarkMode = () => {
   return (
     <button
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-      className="fixed bottom-6 left-6  bg-[#222222] fill-white stroke-white dark:bg-white  px-2 py-2 rounded-full z-[9]"
+      className="fixed bottom-6 left-6  bg-[#222222] fill-white stroke-white dark:bg-white  px-2 py-2 rounded-full z-[1]"
     >
       {theme === "light" ? (
         <svg

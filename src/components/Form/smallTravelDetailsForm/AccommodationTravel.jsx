@@ -17,7 +17,7 @@ const AccommodationTravel = ({ iranState }) => {
   return (
     <form
       autoComplete="off"
-      className="flex lg:hidden relative w-full flex-col items-center justify-evenly h-auto gap-y-6 py-10 text-black border-vehiclsContainer  shadow-sm bg-white dark:border-black dark:bg-[#1b344d] rounded-xl mx-auto px-4  mb-12 mt-10"
+      className="flex lg:hidden relative w-full flex-col items-center justify-evenly h-auto gap-y-6 py-10 text-black border-vehiclsContainer  shadow-sm bg-white dark:border-black dark:bg-[#1b344d] rounded-xl mx-auto px-4  mb-12 mt-10 z-[4]"
     >
       <div className="w-full py-2 pr-4 bg-white dark:bg-gray-700 rounded-lg ">
         <Link href="/">

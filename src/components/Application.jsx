@@ -16,7 +16,7 @@ export default function Application() {
         />
       </div>
       <div className="text-sm !flex flex-col justify-start  pl-4 items-start my-auto !text-justify max-h-full flex-1  lg:w-auto">
-        <h2 className="font-semibold text-base xl:text-2xl mb-6">
+        <h2 className="font-bold lg:font-semibold text-sm lg:text-base xl:text-2xl mb-6">
           {t("application")}
         </h2>
         <h5 className="font-sm xl:text-xl hidden md:block">

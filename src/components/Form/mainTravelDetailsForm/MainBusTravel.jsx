@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { useLanguage } from "../Navbar";
 import RoundTripSelection from "../../RoundTripSelection";
 import MainOriginAndDestination from "../../../Container/MainOriginAndDestination";
 import DatePicker from "../../DatePicker";
+import { useLanguage } from "../../../provider/Navbar";
 
 const MainBusInformation = ({ iranState }) => {
   const [oneWay,setOneWay] = useState(false)
