@@ -2,7 +2,7 @@ import React, { FC, useEffect, useRef, useState } from "react";
 import persian from "react-date-object/calendars/persian";
 import persian_fa from "react-date-object/locales/persian_fa";
 import DatePicker from "react-multi-date-picker";
-import { useLanguage } from "../provider/Navbar";
+import { useLanguage } from "../Provider/Navbar";
 
 const TwoWayDatePicker = ({ oneWay }) => {
 // Language

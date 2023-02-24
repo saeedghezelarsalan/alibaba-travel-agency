@@ -24,7 +24,6 @@
     "yup": "^0.32.11"
   },
   "devDependencies": {
-    "@svgr/webpack": "^6.5.0",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@types/node": "18.14.0",
     "autoprefixer": "^10.4.12",

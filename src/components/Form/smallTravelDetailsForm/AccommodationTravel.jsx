@@ -4,7 +4,7 @@ import AccommodationPassengerInformation from "../../../Container/AccommodationP
 import Link from "next/link";
 import RoundTripSelection from "../../RoundTripSelection";
 import SmallOriginAndDestination from "../../SmallOriginAndDestination";
-import { useLanguage } from "../../../provider/Navbar";
+import { useLanguage } from "../../../Provider/Navbar";
 
 const AccommodationTravel = ({ iranState }) => {
   const lang = useLanguage();

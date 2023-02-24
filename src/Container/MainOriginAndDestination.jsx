@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useReducer } from "react";
-import { useLanguage } from "../provider/Navbar";
+import { useLanguage } from "../Provider/Navbar";
 
 const MainOriginAndDestination = ({
   iranStates,

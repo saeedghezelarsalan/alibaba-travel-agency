@@ -3,7 +3,7 @@ import RoundTripSelection from "../../RoundTripSelection";
 import MainOriginAndDestination from "../../../Container/MainOriginAndDestination";
 import DatePicker from "../../DatePicker";
 import AccommodationPassengerInformation from "../../../Container/AccommodationPassengerInformation";
-import { useLanguage } from "../../../provider/Navbar";
+import { useLanguage } from "../../../Provider/Navbar";
 
 const MainAccommodationTravel = ({ iranState }) => {
   const lang = useLanguage();

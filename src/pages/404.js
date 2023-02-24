@@ -4,7 +4,7 @@ import React from 'react'
 import NotFoundImg from '../../public/assets/404-alibaba.webp'
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import axios from 'axios';
-import { useLanguage } from '../provider/Navbar';
+import { useLanguage } from '../Provider/Navbar';
 
 const NotFound = () => {
   const lang = useLanguage()

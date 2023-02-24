@@ -1,6 +1,6 @@
 import "../../styles/globals.css";
 import Head from "next/head";
-import Navbar from "../provider/Navbar";
+import Navbar from "../Provider/Navbar";
 import { appWithTranslation } from "next-i18next";
 import BorderProvider from "../Provider/BorderProvider";
 import Footer from "../components/Footer";

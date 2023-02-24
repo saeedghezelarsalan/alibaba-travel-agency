@@ -3,7 +3,7 @@ import RoundTripSelection from '../../RoundTripSelection'
 import MainOriginAndDestination from '../../../Container/MainOriginAndDestination'
 import DatePicker from '../../DatePicker'
 import TravelPassengerInformation from '../../../Container/TravelPassengerInformation'
-import { useLanguage } from "../../../provider/Navbar";
+import { useLanguage } from "../../../Provider/Navbar";
 
 const MainVehicleTravel = ({ iranState }) => {
   

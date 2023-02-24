@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 import { useLeftBorder } from "../Provider/BorderProvider";
-import { useLanguage } from "../provider/Navbar";
+import { useLanguage } from "../Provider/Navbar";
 
 const MobileVehiclesContainer = () => {
     // useState

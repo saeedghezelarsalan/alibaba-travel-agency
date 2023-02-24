@@ -1,6 +1,6 @@
 import React, { useEffect, useReducer, useRef, useState } from "react";
 import { digitsEnToFa } from "@persian-tools/persian-tools";
-import { useLanguage } from "../provider/Navbar";
+import { useLanguage } from "../Provider/Navbar";
 
 const TravelPassengerInformation = () => {
 

@@ -4,7 +4,7 @@ import DatePicker from "../../DatePicker";
 import Link from "next/link";
 import RoundTripSelection from "../../RoundTripSelection";
 import MobileOriginAndDestination from "../../SmallOriginAndDestination";
-import { useLanguage } from "../../../provider/Navbar";
+import { useLanguage } from "../../../Provider/Navbar";
 
 const VehicleTravel = ({ iranState }) => {
   const lang = useLanguage()

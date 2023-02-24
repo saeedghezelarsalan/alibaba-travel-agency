@@ -3,7 +3,7 @@ import DatePicker from "../../DatePicker";
 import Link from "next/link";
 import RoundTripSelection from "../../RoundTripSelection";
 import MobileOriginAndDestination from "../../SmallOriginAndDestination";
-import { useLanguage } from "../../../provider/Navbar";
+import { useLanguage } from "../../../Provider/Navbar";
 
 const BusTravel = ({ iranState }) => {
   const lang = useLanguage();

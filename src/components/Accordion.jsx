@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useLanguage } from "../provider/Navbar";
+import { useLanguage } from "../Provider/Navbar";
 
 const Accordion = ({ accordions }) => {
   // useState

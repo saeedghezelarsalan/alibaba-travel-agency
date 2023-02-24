@@ -12,7 +12,7 @@ import Accordion from "../components/Accordion";
 import { PagesDescription } from "../components/PagesDescription";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useRouter } from "next/router";
-import { useLanguage } from "../provider/Navbar";
+import { useLanguage } from "../Provider/Navbar";
 
 const Home = ({ accordion, homePageDescription, iranState }) => {
   // useState

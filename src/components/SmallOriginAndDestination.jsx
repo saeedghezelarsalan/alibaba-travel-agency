@@ -1,6 +1,6 @@
 import React, { useReducer, useState } from "react";
 import MainOriginAndDestination from "../Container/MainOriginAndDestination";
-import { useLanguage } from "../provider/Navbar";
+import { useLanguage } from "../Provider/Navbar";
 
 const SmallOriginAndDestination = ({ iranState }) => {
 

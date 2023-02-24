@@ -12,7 +12,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import MainAccommodationTravel from "../components/Form/mainTravelDetailsForm/MainAccommodationTravel";
 import { useRouter } from "next/router";
 import AccommodationTravel from "../components/Form/smallTravelDetailsForm/AccommodationTravel";
-import { useLanguage } from "../provider/Navbar";
+import { useLanguage } from "../Provider/Navbar";
 
 const Home= ({ accordion, homePageDescription, iranState }) => {
 

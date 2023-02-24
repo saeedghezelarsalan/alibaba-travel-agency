@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { digitsEnToFa, numberToWords } from "@persian-tools/persian-tools";
-import { useLanguage } from "../provider/Navbar";
+import { useLanguage } from "../Provider/Navbar";
 
 const HotelReducer = () => {
   // useState
