@@ -87,7 +87,7 @@ const Footer = () => {
 
       <div className="flex flex-col  lg:flex-row lg:flex-nowrap mb-4">
         <div className="w-full gap-y-4 text-center flex justify-between flex-col items-center lg:items-start lg:flex-row flex-wrap lg:px-6 gap-x-4 mb-5 lg:mb-8">
-          <div className="flex flex-col">
+          <div className="flex flex-col lg:items-start">
             <p
               onClick={() => toggleFirstFooterDispatch({ type: "makeToggle" })}
               className="text-[#424750] cursor-pointer select-none font-bold text-base mb-2"
@@ -95,7 +95,7 @@ const Footer = () => {
               {t("alibaba")}
             </p>
             <div
-              className={`flex flex-col transition-all ease-out  ${
+              className={`flex flex-col transition-all ease-out !lg:items-start lg:text-start ${
                 toggleFirstFooter.toggle
                   ? "max-h-0 lg:max-h-screen overflow-hidden lg:overflow-visible transition-all ease-out  "
                   : "max-h-screen  transition-all ease-out  text-base"
@@ -126,7 +126,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="flex flex-col">
+          <div className="flex flex-col lg:items-start">
             <p
               onClick={() => toggleSecondFooterDispatch({ type: "makeToggle" })}
               className="text-[#424750] cursor-pointer select-none font-bold text-base mb-2"
@@ -135,7 +135,7 @@ const Footer = () => {
             </p>
 
             <div
-              className={`flex flex-col transition-all ease-out  ${
+              className={`flex flex-col transition-all ease-out lg:text-start ${
                 toggleSecondFooter.toggle
                   ? "max-h-0 lg:max-h-screen overflow-hidden lg:overflow-visible transition-all ease-out  "
                   : "max-h-screen  transition-all ease-out  text-base"
@@ -171,7 +171,7 @@ const Footer = () => {
               {t("furtherInformation")}
             </p>
             <div
-              className={`flex flex-col transition-all ease-out  ${
+              className={`flex flex-col transition-all ease-out lg:text-start  ${
                 toggleThirdFooter.toggle
                   ? "max-h-0 lg:max-h-screen overflow-hidden lg:overflow-visible transition-all ease-out  "
                   : "max-h-screen  transition-all ease-out  text-base"

@@ -249,10 +249,10 @@ const MainOriginAndDestination = ({
   const clickOutside = (e) => {
     if (
       flights.current.contains(e.target) ||
-      (lang == "fa" && endRef.current.contains(e.target)) ||
-      (lang == "fa" && startRef.current.contains(e.target)) ||
-      (lang == "en" && englishEndInputRef.current.contains(e.target)) ||
-      (lang == "en" && englishStartInputRef.current.contains(e.target))
+      (lang == "fa" && endRef?.current?.contains(e.target)) ||
+      (lang == "fa" && startRef?.current?.contains(e.target)) ||
+      (lang == "en" && englishEndInputRef?.current?.contains(e.target)) ||
+      (lang == "en" && englishStartInputRef?.current?.contains(e.target))
     ) {
       // inside click
       return true;
