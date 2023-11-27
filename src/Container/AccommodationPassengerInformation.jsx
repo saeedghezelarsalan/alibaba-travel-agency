@@ -374,8 +374,8 @@ const HotelReducer = () => {
             </div>
             {/* childrens age */}
             <div className="grid grid-cols-2 gap-x-2 gap-y-2">
-              {passenger.childAge?.map((a) => (
-                <div className="flex flex-col border-black">
+              {passenger.childAge?.map((a,index) => (
+                <div key={index} className="flex flex-col border-black">
                   <select
                     name=""
                     id=""

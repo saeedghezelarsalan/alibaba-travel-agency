@@ -42,7 +42,7 @@ const Footer = () => {
       <div className="w-full h-auto  mx-auto max-w-screen-2xl border border-x-0 border-t-0 mb-8 py-8">
         <ul className="flex flex-col lg:flex-row w-auto px-2 md:px-0 xl:gap-x-28  items-center lg:items-start">
           <li className="flex items-center w-auto mx-auto mb-4 justify-center !p-0">
-            <Image src={footerFirstLogo} width={150} height={150} />
+            <Image src={footerFirstLogo} width={150} height={150} alt={''}/>
             <div className="flex flex-col sm:justify-center lg:justify-between w-full lg:mr-2">
               <h3 className="text-sm font-bold text-[#4b5259] dark:text-[#07ce39] mb-2 lg:mb-0">
                 {t("firstRank")}
@@ -55,7 +55,7 @@ const Footer = () => {
 
           <li className="flex w-auto mb-4 justify-between items-center lg:justify-center !p-0">
             <div className="w-32 h-24">
-              <Image src={footerSecondLogo} layout="responsive" />
+              <Image src={footerSecondLogo} layout="responsive" alt={''}/>
             </div>
             <div className="flex flex-col sm:justify-center lg:justify-between w-full lg:mr-2">
               <h3 className="text-sm font-bold text-[#4b5259] dark:text-[#07ce39] mb-2 lg:mb-0">
@@ -68,7 +68,7 @@ const Footer = () => {
           </li>
 
           <li className="flex w-auto mb-4 items-center justify-between lg:justify-center !p-0">
-            <Image src={footerThirdLogo} width={150} height={150} />
+            <Image src={footerThirdLogo} width={150} height={150} alt={''}/>
             <div className="flex flex-col sm:justify-center justify-between w-full lg:mr-2">
               <h3 className="text-sm font-bold text-[#4b5259] dark:text-[#07ce39] mb-2 lg:mb-0">
                 {t("Companion")}
@@ -201,6 +201,7 @@ const Footer = () => {
                 width="100%"
                 height={14}
                 layout="responsive"
+                alt={''}
               />
             </div>
             <div className="flex justify-end gap-x-5 mb-2">

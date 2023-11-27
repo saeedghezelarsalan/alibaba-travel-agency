@@ -36,6 +36,7 @@ export default function MainSlider() {
         <SwiperSlide>
           <div className="relative w-full max-w-auto h-full object-cover ">
             <Image
+              alt={''}
               src={
                 "https://cdn.alibaba.ir/h/desktop/assets/images/breaking-news/flight.webp-1a60c658.webp"
               }
@@ -48,6 +49,7 @@ export default function MainSlider() {
         <SwiperSlide>
           <div className="relative w-full max-w-auto h-full  object-cover ">
             <Image
+              alt={''}
               src={
                 "https://cdn.alibaba.ir/h/desktop/assets/images/breaking-news/kish-travel-book.webp-c0a016c0.webp"
               }
@@ -61,6 +63,7 @@ export default function MainSlider() {
         <SwiperSlide>
           <div className="relative w-full max-w-auto h-full  object-cover ">
             <Image
+              alt={''}
               src={
                 "https://cdn.alibaba.ir/h/desktop/assets/images/breaking-news/pensioners.webp-f85b5e0b.webp"
               }

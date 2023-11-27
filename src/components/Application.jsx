@@ -32,11 +32,11 @@ export default function Application() {
         </button>
       </div>
 
-      <div className=" flex flex-[1] justify-center mx-auto md:ml-0 md:mr-auto !shrink-0  self-end">
-        <img
-          src="https://cdn.alibaba.ir/h/desktop/assets//app/website/src/common/assets/images/app-mobile/app-mobile@1x.webp-09aa7fed.webp "
-          className=""
-        />
+      <div className="flex flex-[1] justify-center mx-auto md:ml-0 md:mr-auto !shrink-0 self-end">
+          <img
+            src={"https://cdn.alibaba.ir/h/desktop/assets//app/website/src/common/assets/images/app-mobile/app-mobile@1x.webp-09aa7fed.webp "}
+            alt={''}
+          />
       </div>
     </div>
   );

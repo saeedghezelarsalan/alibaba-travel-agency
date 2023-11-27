@@ -1,16 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
 import users from "../../public/assets/user.png";
-import React, { useContext, useEffect, useState } from "react";
-import { Menu } from "@headlessui/react";
-import { useTranslation } from "next-i18next";
-import { useRouter } from "next/router";
+import React, {useContext, useEffect, useState} from "react";
+import {Menu} from "@headlessui/react";
+import {useTranslation} from "next-i18next";
+import {useRouter} from "next/router";
+
 const siteLanguageContext = React.createContext("");
 
-const Navbar = ({ children }) => {
+const Navbar = ({children}) => {
   const [show, setShow] = useState(true);
   const [scrollPos, setScrollPos] = useState(0);
-  const { t } = useTranslation("navbar");
+  const {t} = useTranslation("navbar");
   const [lang, setLang] = useState("");
   const router = useRouter();
 
@@ -26,21 +27,21 @@ const Navbar = ({ children }) => {
   }, [router.locale]);
 
   // hide or show navbar on scroll
-  const controllNavbar = () => {
-    setShow(true);
-    if (window.scrollY > 250) {
-      setScrollPos(document.body.getBoundingClientRect().top);
-      if (document.body.getBoundingClientRect().top < scrollPos) {
-        setShow(false);
+  useEffect(() => {
+    const controllNavbar = () => {
+      setShow(true);
+      if (window.scrollY > 250) {
+        setScrollPos(document.body.getBoundingClientRect().top);
+        if (document.body.getBoundingClientRect().top < scrollPos) {
+          setShow(false);
+        } else {
+          setShow(true);
+        }
       } else {
         setShow(true);
       }
-    } else {
-      setShow(true);
-    }
-  };
+    };
 
-  useEffect(() => {
     window.addEventListener("scroll", controllNavbar);
     return () => {
       window.removeEventListener("scroll", controllNavbar);
@@ -159,28 +160,38 @@ const Navbar = ({ children }) => {
                   >
                     <Menu.Item>
                       <Link href="/">
-                        <a className="p-2 text-sm w-full text-center dark:text-white hover:bg-[#f8fafb]  dark:hover:text-black  hover:rounded-[10px] active:shadow-md cursor-pointer">
+                        <a
+                          className="p-2 text-sm w-full text-center dark:text-white hover:bg-[#f8fafb]  dark:hover:text-black  hover:rounded-[10px] active:shadow-md cursor-pointer">
                           {t("domesticFlight")}
                         </a>
                       </Link>
                     </Menu.Item>
                     <a className="w-auto h-[1px] bg-[#0000001A] dark:bg-white  self-stretch mx-3 min-w-[1px] max-w-full"></a>
                     <Menu.Item>
-                      <a className="p-2 text-sm w-full text-center  hover:bg-[#f8fafb] dark:text-white dark:hover:text-black  hover:rounded-[10px] active:shadow-md cursor-pointer">
-                        {t("internationalFlight")}
-                      </a>
+                      <Link href="/iranout">
+                        <a
+                          className="p-2 text-sm w-full text-center  hover:bg-[#f8fafb] dark:text-white dark:hover:text-black  hover:rounded-[10px] active:shadow-md cursor-pointer">
+                          {t("internationalFlight")}
+                        </a>
+                      </Link>
                     </Menu.Item>
                     <a className="w-auto h-[1px] bg-[#0000001A] dark:bg-white  self-stretch mx-3 min-w-[1px] max-w-full"></a>
                     <Menu.Item>
-                      <a className="p-2 text-sm w-full text-center hover:bg-[#f8fafb] dark:text-white dark:hover:text-black  hover:rounded-[10px] active:shadow-md cursor-pointer">
-                        {t("train")}
-                      </a>
+                      <Link href="/train-ticket">
+                        <a
+                          className="p-2 text-sm w-full text-center hover:bg-[#f8fafb] dark:text-white dark:hover:text-black  hover:rounded-[10px] active:shadow-md cursor-pointer">
+                          {t("train")}
+                        </a>
+                      </Link>
                     </Menu.Item>
                     <a className="w-auto h-[1px] bg-[#0000001A] dark:bg-white  self-stretch mx-3 min-w-[1px] max-w-full"></a>
                     <Menu.Item>
-                      <a className="p-2 text-sm w-full text-center  hover:bg-[#f8fafb] dark:text-white dark:hover:text-black  hover:rounded-[10px] active:shadow-md cursor-pointer">
-                        {t("bus")}
-                      </a>
+                      <Link href="/bus-ticket">
+                        <a
+                          className="p-2 text-sm w-full text-center  hover:bg-[#f8fafb] dark:text-white dark:hover:text-black  hover:rounded-[10px] active:shadow-md cursor-pointer">
+                          {t("bus")}
+                        </a>
+                      </Link>
                     </Menu.Item>
                   </Menu.Items>
                 </Menu>
@@ -211,15 +222,19 @@ const Navbar = ({ children }) => {
                     }
                   >
                     <Menu.Item>
-                      <a className="p-2 text-sm w-auto dark:text-white hover:bg-[#f8fafb]  dark:hover:text-black  hover:rounded-[10px] active:shadow-md cursor-pointer">
-                        {t("hotel")}
-                      </a>
+                      <Link href="/hotel">
+                        <a className="p-2 text-sm w-auto dark:text-white hover:bg-[#f8fafb]  dark:hover:text-black  hover:rounded-[10px] active:shadow-md cursor-pointer">
+                          {t("hotel")}
+                        </a>
+                      </Link>
                     </Menu.Item>
                     <a className="w-auto h-[1px] bg-[#0000001A] dark:bg-white  self-stretch mx-3 min-w-[1px] max-w-full"></a>
                     <Menu.Item>
-                      <a className="p-2 text-sm w-auto  hover:bg-[#f8fafb] dark:text-white dark:hover:text-black  hover:rounded-[10px] active:shadow-md cursor-pointer">
-                        {t("village")}
-                      </a>
+                      <Link href="/accommodation">
+                        <a className="p-2 text-sm w-auto  hover:bg-[#f8fafb] dark:text-white dark:hover:text-black  hover:rounded-[10px] active:shadow-md cursor-pointer">
+                          {t("village")}
+                        </a>
+                      </Link>
                     </Menu.Item>
                   </Menu.Items>
                 </Menu>
@@ -292,7 +307,7 @@ const Navbar = ({ children }) => {
               <Link href="/profile/account">
                 <a className="flex items-start  mr-6 hover:bg-[#f8fafb] dark:text-white dark:hover:text-black  hover:rounded-[10px] active:shadow-md py-1 px-3">
                   <div className="ml-2">
-                    <Image src={users} width={20} height={20} />
+                    <Image src={users} width={20} height={20}/>
                   </div>
                   <span>{t("loginOrRegister")}</span>
                 </a>

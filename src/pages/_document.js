@@ -1,9 +1,9 @@
-import Document, { Html, Main, NextScript, Head } from "next/document";
+import Document, {Html, Main, NextScript, Head} from "next/document";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);
-    return { ...initialProps, locale: ctx?.locale || "en" };
+    return {...initialProps, locale: ctx?.locale || "en"};
   }
 
   render() {
@@ -12,10 +12,12 @@ class MyDocument extends Document {
         dir={this.props.locale === "fa" ? "rtl" : "ltr"}
         lang={this.props.locale}
       >
-        <Head></Head>
+        <Head>
+          <link rel="manifest" href="/manifest.json"/>
+        </Head>
         <body>
-          <Main />
-          <NextScript />
+        <Main/>
+        <NextScript/>
         </body>
       </Html>
     );

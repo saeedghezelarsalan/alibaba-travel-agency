@@ -70,7 +70,7 @@ const MobileNav = () => {
             "!fixed !flex !h-auto !w-auto !justify-center !mt-4 !scale-125  !z-20 !pt-0"
           }`}
         >
-          <Image src={alibabaLogo} width={120} height={20} />
+          <Image src={alibabaLogo} width={120} height={20} alt={''}/>
         </div>
       </div>
       <div className="xl:px-16 2xl:px-48 mb-32  xl:mb-0 lg:hidden ">
